@@ -1,26 +1,26 @@
 class Peep < Formula
   desc "TLS diagnostic tool — peeps into handshakes and certificate chains"
   homepage "https://github.com/thexsa/peep"
-  version "0.5.1"
+  version "0.5.2"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/thexsa/peep/releases/download/v#{version}/peep-darwin-arm64"
-      sha256 "3de9a67d337b7b03a5591f35ad327474105c7130c8872b277fd8eced426cefe5"
+      sha256 "b1c83efb871479b07c732507e56d1e9593e3a9bc2ab91f0be5c9860b3d3aa18a"
     else
       url "https://github.com/thexsa/peep/releases/download/v#{version}/peep-darwin-amd64"
-      sha256 "071172720f89226fef2dcdf18a19a9ae8c563c2c298df8dc23ed4a2108e9917d"
+      sha256 "d2ef5c91e36e49d0892f590825db981de89031e8fa1deb5e0cefcade8bd65f92"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/thexsa/peep/releases/download/v#{version}/peep-linux-arm64"
-      sha256 "730dee61739ceca7f3785f9a6bd7900aa5452d1e8e93cc31fa8078850e10426b"
+      sha256 "cfd62c9f7b208a194db98c7d01b4453d858abd69bfb8ff8079fd3759b966d4bb"
     else
       url "https://github.com/thexsa/peep/releases/download/v#{version}/peep-linux-amd64"
-      sha256 "b878fd70f9f10386dc9cb310a23b347cdefc62a2da5137bd43e58042ccc1d73b"
+      sha256 "e932b40b2e34d7947f05c398c5568a23c65a5c34dc60a2b42308102d0c1a8c99"
     end
   end
 
