@@ -7,20 +7,20 @@ class Peep < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/thexsa/peep/releases/download/v#{version}/peep-darwin-arm64"
-      sha256 "0318e0e99747c71365d3eeb99137e7da7d381734472c05f0722260992192c54c"
+      sha256 "e1e23e0314ab33f6b30a59ee55e1a13d7938dc6a408e7630f478491ef8b020c5"
     else
       url "https://github.com/thexsa/peep/releases/download/v#{version}/peep-darwin-amd64"
-      sha256 "e7a36e83aa6f3057a1f1fb79b95a4b5ede2ec9317df86325d966f3cd3522cd4d"
+      sha256 "518a14a45ac9b40f9b8aab49bcfcabdb34772462d03c188663f178b9665c1129"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/thexsa/peep/releases/download/v#{version}/peep-linux-arm64"
-      sha256 "b08db77ed4a763d7553046b09cb977c59db7a521a94a01c58be3c8ac832e9420"
+      sha256 "9245ea48c0cad1c7e1b96f9811275f7070f6ec099311d02068c4f24e67957141"
     else
       url "https://github.com/thexsa/peep/releases/download/v#{version}/peep-linux-amd64"
-      sha256 "1be5fd7f70b36d325489c867fda8bfc64f6932ee70fb4dcd4ca805789997a1a2"
+      sha256 "ffaf9823de4a849318b8be43748cf9bb5bff02131bcbdfdc5c8611bb0a70cecf"
     end
   end
 
